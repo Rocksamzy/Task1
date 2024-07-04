@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get('/api/hello', (req, res) => {
+app.get('/api/hello.html', (req, res) => {
     const visitorName = req.query.visitor_name;
     const clientIp = req.ip; // This will get to the client's IP address
     const location = "New York"; // Static location for demonstration purposes
